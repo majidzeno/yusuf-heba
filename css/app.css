@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe");
+
+body {
+  text-align: center;
+  font-family: "ZCOOL KuaiLe", cursive;
+  color: #444;
+  background: #2196f3;
+}
+div {
+  display: inline-block;
+  line-height: 1;
+  padding: 1vw;
+  font-size: 3vw;
+}
+span {
+  display: block;
+  font-size: 3vw;
+  color: #aaa;
+}
+.pageCont {
+  background-color: #fff;
+}
+#timer > div {
+  width: 19vw;
+}
+#days {
+  font-size: 10vw;
+  color: #cb3834;
+}
+#hours {
+  font-size: 8vw;
+  color: #e06c12;
+}
+#minutes {
+  font-size: 6vw;
+  color: #e6ca64;
+}
+#seconds {
+  font-size: 4vw;
+  color: #9bbd48;
+}
+#output {
+  color: #298aa1;
+  font-size: 5vw;
+  line-height: 1.4;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffd5d5;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  color: #581d22;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.cover-page .banner-desktop,
+.couple .img-banner-title,
+.details-wedding .img-banner-title,
+.gifts .img-banner-title,
+.form-rsvp .img-banner-title {
+  margin: auto;
+}
+
+.buffet-img,
+.her img,
+.his img,
+.gifts .shop1 img,
+.gifts .shop2 img {
+  box-shadow: 7px 7px 20px #333;
+}
+
+.g-maps {
+  padding: 10px;
+  background-color: #581d22;
+}
+
+.g-maps a {
+  color: #ffd5d5;
+}
+
+.title-on-image-gift,
+.title-on-image-details {
+  display: inline-block;
+  position: relative;
+}
+
+.title-on-image-gift figcaption,
+.title-on-image-details figcaption {
+  position: absolute;
+  top: 0px;
+  width: 335px;
+  height: 335px;
+  background-color: #0f0f0f96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-on-image-gift h1,
+.title-on-image-details h1 {
+  color: #ffd5d5;
+  border-top: #ffd5d5 2px dashed;
+  border-bottom: #ffd5d5 2px dashed;
+}
+
+.form-rsvp form {
+  text-align: left;
+  max-width: 95%;
+}
+
+.form-rsvp select {
+  height: 25px;
+  width: 80px;
+  font-size: 15px;
+}
+
+.form-couple .input-text,
+.form-couple textarea {
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  background-color: #ffd5d5;
+  font-family: "Courier New", Courier, monospace;
+  color: #581d22;
+}
+
+.form-couple .input-text {
+  border: none;
+  border-bottom: #581d22c0 2px solid;
+}
+
+.form-couple textarea {
+  border: #581d22c0 2px solid;
+}
+
+.form-buttons {
+  width: 100%;
+  height: 25px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.form-buttons input {
+  padding: 15px;
+  background-color: #581d22;
+  color: #ffd5d5;
+  border: #581d22 1px solid;
+}
+
+.links-bottom,
+.links-bottom-mobile {
+  text-align: center;
+  padding: 15px;
+}
+
+.links-bottom a,
+.links-bottom-mobile a {
+  padding: 15px 10px 10px 10px;
+}
+
+.links-bottom a:hover,
+.links-bottom-mobile a:hover {
+  border-bottom: #581d22 2px dashed;
+}
+
+footer {
+  /* height: 30px; */
+  display: block;
+  text-align: center;
+}
+
+footer .container {
+  border-top: #581d22 2px dashed;
+}
+
+footer .copyright {
+  padding: 15px;
+}
+
+nav {
+  cursor: pointer;
+  width: 100%;
+  background-color: #581d22;
+  /* height: 30px; */
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: #581d22 2px solid;
+}
+
+nav ul li a {
+  color: #ffd5d5;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  border: #ffd5d5 2px dashed;
+}
+
+#menu-hamburger,
+.menu-hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 830px) {
+  nav {
+    display: none;
+  }
+
+  #menu-hamburger:checked ~ nav {
+    display: block;
+  }
+
+  .menu-hamburger {
+    display: block;
+    color: #ffd5d5;
+    font-size: 2.3em;
+    width: 100%;
+    text-align: right;
+    background-color: #581d22;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    background-color: #581d22;
+    height: 30px;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts {
+    width: 100%;
+  }
+
+  .container {
+    width: 300px;
+    margin: auto;
+    padding-top: 70px;
+  }
+
+  .banner-desktop,
+  .hover-the-mouse,
+  .ring-menu,
+  .img-banner-title,
+  .google-maps {
+    display: none;
+  }
+
+  .g-maps {
+    display: block;
+  }
+
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts,
+  .form-rsvp {
+    text-align: center;
+  }
+
+  .title-on-image-gift figcaption {
+    width: 220px;
+    height: 220px;
+  }
+
+  .title-on-image-details figcaption {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts {
+    width: 100%;
+  }
+
+  .container {
+    width: 400px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .banner-desktop,
+  .hover-the-mouse,
+  .ring-menu,
+  .img-banner-title {
+    display: none;
+  }
+
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts,
+  .form-rsvp {
+    text-align: center;
+  }
+
+  .title-on-image-gift figcaption {
+    width: 320px;
+    height: 320px;
+  }
+
+  .title-on-image-details figcaption {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts {
+    width: 100%;
+  }
+
+  .container {
+    width: 680px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .banner-desktop,
+  .hover-the-mouse,
+  .ring-menu,
+  .title-couple,
+  .g-maps {
+    display: none;
+  }
+
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts,
+  .form-rsvp {
+    text-align: center;
+  }
+
+  .img-banner-title,
+  .google-maps {
+    display: block;
+  }
+
+  .title-on-image-gift figcaption {
+    width: 350px;
+    height: 350px;
+  }
+
+  .title-on-image-details figcaption {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cover-page,
+  couple,
+  .details-wedding,
+  .gifts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cover-page img {
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 900px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .banner-mobile,
+  .hover-the-mouse,
+  .title-couple,
+  .icon,
+  .menu-name {
+    display: none;
+  }
+
+  .img-banner-title,
+  .banner-desktop {
+    display: block;
+  }
+
+  .cover-page,
+  .couple,
+  .details-wedding,
+  .gifts,
+  .form-rsvp {
+    text-align: center;
+  }
+
+  .columns-couple {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+  }
+
+  .her,
+  .his {
+    width: 350px;
+    margin: 3%;
+  }
+
+  .title-on-image-gift figcaption {
+    width: 350px;
+    height: 350px;
+  }
+
+  .title-on-image-details figcaption {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ring-menu {
+    display: block;
+  }
+
+  .container {
+    width: 1140px;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .bold {
+    font-weight: bolder;
+  }
+
+  .title-couple {
+    display: none;
+  }
+
+  .img-banner-title {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  .her,
+  .his {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    border: #581d22 2px dashed;
+  }
+
+  .her,
+  .his {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clara,
+  .leo,
+  .menu-name {
+    display: none;
+  }
+
+  .her:hover .clara,
+  .his:hover .leo {
+    position: relative;
+    display: block;
+    max-width: 85%;
+    height: auto;
+  }
+
+  .her:hover .text-bio,
+  .his:hover .text-bio,
+  .icon {
+    display: none;
+  }
+
+  .text-bio {
+    padding: 25px;
+  }
+
+  .ring-menu {
+    margin: 5%;
+    width: 200px;
+    height: auto;
+    text-align: center;
+  }
+
+  .ring {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ring-menu a:hover {
+    border-bottom: #581d22 2px dashed;
+  }
+
+  .columns-couple {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hover-the-mouse {
+    margin-top: -30px;
+  }
+
+  .details-wedding {
+    text-align: center;
+  }
+
+  .local,
+  .more-details {
+    width: 400px;
+  }
+
+  .local iframe {
+    max-width: 100%;
+  }
+
+  .icon-flag-local,
+  .icon-more-details {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+
+  .more-details h3,
+  .gifts {
+    text-align: center;
+  }
+
+  .title-on-image-gift figcaption {
+    width: 319.56px;
+    height: 319.56px;
+  }
+
+  .form-rsvp {
+    text-align: center;
+  }
+
+  .form-couple {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .title-on-image-details figcaption {
+    height: 175.72px;
+    width: 312.48px;
+  }
+
+  footer p {
+    /* line-height: 1px; */
+  }
+
+  .links-bottom-mobile {
+    display: none;
+  }
+}
+
+#meet {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#heba {
+  max-width: 15%;
+  width: 100%;
+}
+#heba img {
+  width: 90%;
+  height: 5em;
+}
+#yusuf {
+  max-width: 15%;
+  width: 100%;
+}
+#yusuf img {
+  width: 100%;
+  height: 6em;
+}
+
+#gap {
+  max-width: 60%;
+  /* width: 60%; */
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#daysLeft span {
+  margin: 0 5%;
+  color: rgb(54, 54, 165);
+}
+#daysLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#timeLeft {
+  width: 100%;
+  border-bottom: 5px solid black;
+}
+h4 {
+  color: #2196f3;
+}
+#scrollDown {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+}
+#scrollDown span{
+    color: #581d22;
+}
+.bounce {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 30;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    top: 30;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    top: 30;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
